@@ -3,6 +3,7 @@ import React from "react";
 var idCounter = 1;
 
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
+  //Functions
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -16,6 +17,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     setStatus(e.target.value);
   };
 
+  //UI
   return (
     <form>
       <input
